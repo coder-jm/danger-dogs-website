@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav > ul > a > button {
+  background: blue;
+  color: white;
+  margin-top: 0px;
+}
+
+section {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  margin:0;
+}
+
+#mint {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+iframe {
+  margin:0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+}
+
+section:last-child{
+  border-bottom: none;
+}
+
+nav {
+  display:flex;
+  justify-content: space-around;
+  background-color: rgba(245, 245, 245, 0.64);
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  height: 90px;
+}
+
+button {
+  border:none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(217, 249, 10);
+  color:black;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#twitter-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+ul {
+  display:flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  margin-top: 10px;
+
+}
+
+button , a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/* home */
+
+#home {
+  background-color: #e9d1e4;
+  background-image: linear-gradient(315deg, #d2aacab6 0%, #97d1beb7 74%);
+  
+  
+  
+}
+
+#home > .wrapper > h1 {
+  font-size: 100px;
+
+}
+
+#home > .wrapper > p {
+  font-weight:bold;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*intro*/
+
+#intro {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(0, 106, 255);
+  color:white;
+  display:flex;
+}
+
+#intro > .wrapper > p {
+  font-weight:400;
+}
+
+#intro > .wrapper  {
+  padding-top: 30px;
+  width: 40vw;
+}
+
+#intro > .image-wrap {
+  height: 100vh;
+  width: 50vw;
+  display: grid;
+  place-items:center;
+}
+
+#intro-image {
+  border-radius: 10px;
+  height: 450px;
+  margin-left: 20px;
+}
+
+/*roadmap*/
+
+#roadmap {
+  display:flex;
+  justify-content: space-between;
+  background-color: rgba(173, 216, 230, 0.684);
+}
+
+#roadmap > .wrapper {
+  margin-left: 20px;
+  padding-right: 100px;
+  width: 50vw;
+  position:relative; 
+  right: 0;
+}
+
+#roadmap-image {
+  border-radius: 10px;
+  margin-right: 20px;
+  width: 30vw;
+}
+
+#card {
+  width: 100%;
+  min-height: 120px;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin-bottom : 20px;
+  border-radius: 15px;
+}
+
+#card > p {
+  font-size: 15px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+#tutorial {
+  background-color: greenyellow;
+
+}
+
+#t-img {
+  width: 500px;
+  height: 300px;
+}
+
+/*creator*/
+
+#creator {
+  display:flex;
+  justify-content: space-between;
+  background-color: rgb(0, 106, 255);
+  color:white;
+}
+#creator > .wrapper {
+  width: 50vw;
+  position:relative;
+  left:0;
+  padding-top: 50px;
+}
+#creator > .image-wrap {
+  height: 100vh;
+  width: 50vw;
+  display:grid;
+  place-items:center;
+  position:relative;
+  right:0;
+}
+
+#creator > .image-wrap > img {
+  height: 100vh;
+  border-radius: 10px;
+  margin-left: 20px;
+
+}
+
+#faq {
+  background-color: #d9e4f5;
+background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 95%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: block;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px){
+
+* {
+  text-align: center;
+}
+
+section {
+    min-height: 400px;
+    width: 100vw;
+    padding: 15px;
+    margin:0;
+  }
+
+	nav {
+    display:none;
+  }
+
+  h1 {
+    font-size: 35px !important;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  #creator {
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(0, 106, 255);
+  }
+  
+  #creator > .wrapper {
+    width: 85vw;
+    padding-left: 5vw;
+  }
+  #creator > .image-wrap {
+    height: 320px;
+    width: 100vw;
+  }
+  
+  #creator > .image-wrap > img {
+    height: 300px;
+    margin-top: 15px;
+    margin-right:15vw;
+  }
+
+  #t-img {
+    width: 90vw;
+    height: 200px;
+    
+  }
+
+  #roadmap {
+    display:flex;
+    flex-direction: column;
+    padding-left: 7.5vw;
+    background-color: rgba(173, 216, 230, 0.684);
+  }
+
+  #roadmap > .image-wrap {
+    height:0px;
+  }
+  
+  #roadmap > .wrapper {
+    width: 100vw;
+    position:relative; 
+    right: 0;
+  }
+  
+  #roadmap-image {
+    display:none;
+  }
+  
+  #card {
+    width: 100%;
+    min-height: 120px;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-bottom : 20px;
+    border-radius: 15px;
+  }
+  
+  #card > p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+
+  #intro {
+    padding-left:10px;
+    padding-right:0px;
+    background-color: rgb(0, 106, 255);
+    color:white;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  #intro > .wrapper > button {
+    background-color: yellow;
+    color:black;
+  }
+  
+  #intro > .wrapper > p {
+    font-weight:400;
+  }
+  
+  #intro > .wrapper  {
+    padding-top: 30px;
+    padding-left:30px;
+    width: 85vw;
+  }
+  
+  #intro > .image-wrap {
+    height: 300px;
+    margin-top: 20px;
+    width: 90vw;
+  }
+  
+  #intro-image {
+    border-radius: 10px;
+    height: 300px;
+  }
+  
+}
